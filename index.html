@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style> -->
+</head>
+
+<body>
+    <!-- Desktop Nav -->
+    <nav class=" flex flex-wrap items-center justify-between w-full pb-12 pt-8 md:px-11 lg:px-28  text-lg text-gray-700  max-w-full ">
+        <!-- Responsive Hamburguer menu -->
+        <svg xmlns="<http://www.w3.org/2000/svg>" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <!-- IMAGE -->
+        <div>
+            <a href="#">
+                <img src="assets/cta.svg" />
+            </a>
+        </div>
+        <!--  Menu -->
+        <div class="hidden w-full md:flex md:items-end md:w-auto pr-2" id="menu">
+            <ul class="
+                text-base text-gray-800
+                pt-4
+                md:flex
+                md:justify-between
+                md:pt-0">
+                <li>
+                    <a class="md:p-4 py-2 block hover:text-purple-400" href="#">Inicio</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block hover:text-purple-400" href="#">Testimonios</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block hover:text-purple-400" href="#">Modelo</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block hover:text-purple-400" href="#">Galería</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block hover:text-purple-400 text-purple-500" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="px-0">
+        <div
+          class="
+            flex
+            justify-center
+            items-center
+            bg-purple
+            mx-auto
+            max-w-7xl
+            rounded-lg
+            my-0
+            p-0
+          "
+        >
+          <img
+           src="assets/bg.jpg"
+           class="     
+           rounded-sm
+           md:rounded-lg
+           aspect-auto	
+           min-h-full
+           "
+          />
+        </div>
+      </div>
+</body>
+<script>
+    const button = document.querySelector('#menu-button'); // Hamburger Icon
+    const menu = document.querySelector('#menu'); // Menu
+
+    button.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+</script>
+
+</html>
